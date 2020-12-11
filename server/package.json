@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node -r esm src/app.js",
+    "publishToHeroku": "cd ../ && git subtree push --prefix server heroku main || true",
     "dev": "nodemon -r esm ."
   },
   "author": "",
